@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Eastwood';
+    src: url('../fonts/Eastwood/Eastwood.eot');
+    src: local('☺'), url('../fonts/Eastwood/Eastwood.woff') format('woff'), url('../fonts/Eastwood/Eastwood.ttf') format('truetype'), url('../fonts/Eastwood/Eastwood.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$text-color: #E9E9EF;
+
+.button {
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 18px 42px;
+    background: #4A3D68;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+}
+@media (max-width: 488px){
+    .button{
+        font-size: 16px;
+        padding: 15px 29px;
+    }
+}
+.button:hover {
+    animation: pulse 0.7s infinite;
+    transition: .3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.title {
+    font-family: 'Eastwood';
+    color: #FFFFFF;
+}
